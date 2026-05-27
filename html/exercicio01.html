@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Área de Contato do Cliente">
+    <meta name="author" content="Monteiro">
+    <meta name="keywords" content="contato, cliente, suporte, backend">
+
+    <meta property="og:title" content="Área de Contato do Cliente">
+    <meta
+      property="og:description"
+      content="Envie sua mensagem para a nossa equipe de suporte backend"
+    >
+    <title>Área de Contato do Cliente</title>
+  </head>
+  <body>
+    <header id="cabecalho">
+      <h1 class="titulo">Área de Contato do Cliente</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="corpo-da-pagina">
+      <article>
+        <h2 class="subtitulo">
+          Envie sua mensagem para a nossa equipe de suporte backend
+        </h2>
+
+        <form action="/enviar" method="POST">
+          <fieldset>
+              <legend>Formulário de Contato</legend>
+            <p>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required minlength="3">
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+              <label for="celular">Telefone Celular:</label>
+              <input type="text" id="celular" name="celular" pattern="^\d{11}$"> <!-- ^\d{11}$ -->
+            </p>
+            <p>
+              <label for="msg">Mensagem:</label>
+              <textarea id="msg" name="msg" required></textarea>
+            </p>
+
+            <input type="submit" value="Disparar Dados">
+          </fieldset>
+        </form>
+      </article>
+    </main>
+
+    <footer id="rodape">Suporte Tech 2026</footer>
+  </body>
+</html>
