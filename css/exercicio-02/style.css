@@ -1,0 +1,95 @@
+.container-principal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Força o Header a ocupar a linha inteira no topo */
+header {
+  flex: 0 0 100%;
+}
+
+.menu-lateral {
+  flex: 0 0 15%;
+  box-sizing: border-box;
+}
+
+.conteudo-principal {
+  flex: 0 0 85%;
+  box-sizing: border-box;
+  border-left: 2px solid #000000;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+/* Força o Footer a ocupar a linha inteira na base */
+footer {
+  flex: 0 0 100%;
+  background-color: grey;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  color: white;
+  padding-left: 3px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1 {
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  font-size: 3rem;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+section p:last-child {
+  padding-bottom: 50px;
+}
+
+ul {
+  padding: 10px;
+  margin: 0;
+}
+
+li {
+  background-color: grey;
+  list-style-type: none;
+  margin-top: 3px;
+  padding: 0px;
+}
+
+li a {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+li:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
