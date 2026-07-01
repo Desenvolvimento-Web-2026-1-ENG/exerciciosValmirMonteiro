@@ -38,7 +38,7 @@ class Agenda {
     buscarContato(nome: string): void {
         const contatoEncontrado : Contato | undefined = this.contatos.find(contato => contato.pessoa.nome === nome);
         if (contatoEncontrado) {
-            console.log(`Contato encontrado: ${contatoEncontrado.pessoa.nome} - ${contatoEncontrado.telefone.telefone}`);
+            console.log(`Contato encontrado: ${contatoEncontrado.pessoa.nome} - ${contatoEncontrado.telefone.numero}`);
         } else {
             console.log(`Contato com o nome "${nome}" não encontrado.`);
         }
