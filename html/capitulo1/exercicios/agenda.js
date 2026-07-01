@@ -39,7 +39,7 @@ class Agenda {
     }
 }
 
-// Exemplo de uso da classe Agenda
+
 const minhaAgenda = new Agenda();
 minhaAgenda.adicionarContato("Valmir", "1234-5678");
 minhaAgenda.adicionarContato("Monteiro", "9876-5432");
