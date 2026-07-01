@@ -4,7 +4,7 @@ interface Pessoa {
 }
 
 interface Telefone {
-    telefone: string;
+    numero: string;
     ddd?: string; // só pra não deixar uma interface de uma propriedade só
 }
 
@@ -25,13 +25,13 @@ class Agenda {
     adicionarContato(pessoa: Pessoa, telefone: Telefone): void {
         const novoContato: Contato = { pessoa, telefone };
         this.contatos.push(novoContato);
-        console.log(`Contato adicionado: ${novoContato.pessoa.nome} - ${novoContato.telefone.telefone}`);
+        console.log(`Contato adicionado: ${novoContato.pessoa.nome} - ${novoContato.telefone.numero}`);
     }
 
     listarContatos(): void {
         console.log("Contatos na agenda:");
         this.contatos.forEach((contato) => {
-            console.log(`${contato.pessoa.nome} - ${contato.telefone.telefone}`);
+            console.log(`${contato.pessoa.nome} - ${contato.telefone.numero}`);
         });
     }
 
@@ -46,8 +46,8 @@ class Agenda {
 }
 
 const agenda = new Agenda();
-agenda.adicionarContato({ nome: "Valmir" }, { telefone: "1234-5678" });
-agenda.adicionarContato({ nome: "Monteiro" }, { telefone: "9876-5432" });
+agenda.adicionarContato({ nome: "Valmir" }, { numero: "1234-5678" });
+agenda.adicionarContato({ nome: "Monteiro" }, { numero: "9876-5432" });
 agenda.listarContatos();
 agenda.buscarContato("Valmir");
 agenda.buscarContato("Junior");
