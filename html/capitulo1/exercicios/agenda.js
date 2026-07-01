@@ -41,8 +41,8 @@ class Agenda {
 
 // Exemplo de uso da classe Agenda
 const minhaAgenda = new Agenda();
-minhaAgenda.adicionarContato("Alice", "1234-5678");
-minhaAgenda.adicionarContato("Bob", "9876-5432");
+minhaAgenda.adicionarContato("Valmir", "1234-5678");
+minhaAgenda.adicionarContato("Monteiro", "9876-5432");
 minhaAgenda.listarContatos();
-minhaAgenda.buscarContato("Alice");
-minhaAgenda.buscarContato("Charlie");   
+minhaAgenda.buscarContato("Valmir");
+minhaAgenda.buscarContato("Junior");   
