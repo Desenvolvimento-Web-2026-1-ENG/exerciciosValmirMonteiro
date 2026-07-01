@@ -11,8 +11,8 @@
         <h2 class="titulo-seccao">Horários Académicos</h2>
         <table border="1">
             <tr>
-                <td>Aula</td>
-                <td>Horário</td>
+                <th>Aula</th>
+                <th>Horário</th>
             </tr>
             <tr>
                 <td>Estruturação Multimídia</td>
@@ -22,23 +22,28 @@
         
         <p>Recursos necessários:</p>
         <!-- Deve ser refatorado para uma lista não ordenada estruturada -->
-        * Computador com IDE configurada<br>
-        * Arquivos de legenda (.vtt) prontos
+        <ul>
+            <li>Computador com IDE configurada</li>
+            <li>Arquivos de legenda (.vtt) prontos</li>
+        </ul>
     </div>
 
     <hr>
 
     <!-- MÓDULO 6: CONTEÚDO INTEGRADO (PRECISA DE ACESSIBILIDADE E SEGURANÇA) -->
+
     <div class="bloco-video">
         <h2>Apresentação da Disciplina</h2>
         <!-- Falta controle de vídeo e acessibilidade de legendas -->
-        <video src="apresentacao.mp4"></video>
+        <video src="apresentacao.mp4" controls>
+            <track src="legendas.vtt" kind="subtitles" srclang="pt" label="Português">
+        </video>
     </div>
 
     <div class="bloco-mapa">
         <h2>Localização do Campus IFF</h2>
         <!-- Falta sandbox de segurança e título descritivo acessível -->
-        <iframe src="https://mapas.iff.edu.br"></iframe>
+        <iframe src="https://mapas.iff.edu.br" title="Mapa do Campus IFF" sandbox="allow-scripts allow-same-origin"></iframe>
     </div>
 
 </body>

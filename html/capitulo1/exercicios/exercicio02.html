@@ -1,7 +1,16 @@
 <!-- EXERCÍCIO: APLIQUE METADADOS, SEMÂNTICA DE IMAGEM RESPONSIVA E TEXTO INLINE -->
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <title>galeria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de fotos do Laboratório de Hardware do IFF">
+    <meta name="author" content="Ronaldo Amaral">
+    <meta name="keywords" content="galeria, laboratório, hardware, IFF">
+
+    <meta property="og:title" content="Galeria do Laboratório de Hardware do IFF">
+    <meta property="og:description" content="Fotos do novo laboratório de hardware do IFF">
+    <title>Galeria do Laboratório de Hardware do IFF</title>
 </head>
 <body>
     <div id="noticia-bsi">
@@ -10,8 +19,13 @@
 
         <!-- TAREFA: Refatorar este bloco de imagem desatualizado para usar o elemento <picture> moderno -->
         <!-- Envolva a imagem e sua legenda com as tags semânticas de ilustração corretas -->
-        <img src="banner-servidor.jpg" width="1200" height="800" alt="foto">
-        <p class="legenda-foto">Foto do novo rack de servidores instalados no Laboratório do IFF.</p>
+        <figure>
+            <picture>
+                <source srcset="../../assets/images/banner-servidor.jpg" type="image/jpeg">
+                <img src="../../assets/images/banner-servidor.jpg" width="1200" height="800" alt="foto">
+            </picture>
+            <figcaption>Foto do novo rack de servidores instalados no Laboratório do IFF.</figcaption>
+        </figure>
 
         <p>A equipe técnica do IFF concluiu a infraestrutura de rede local. Para iniciar a auditoria, abra o terminal de linha de comando no seu computador e execute: <b>ping bsi.iff.edu.br</b>.</p>
         
